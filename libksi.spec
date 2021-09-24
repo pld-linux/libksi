@@ -7,7 +7,7 @@ Summary:	Guardtime KSI Client API for C
 Summary(pl.UTF-8):	API klienckie Guardtime KSI dla C
 Name:		libksi
 Version:	3.20.3025
-Release:	1
+Release:	2
 License:	Apache v2.0
 Group:		Libraries
 #Source0Download: https://github.com/guardtime/libksi/releases
