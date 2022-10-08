@@ -6,13 +6,13 @@
 Summary:	Guardtime KSI Client API for C
 Summary(pl.UTF-8):	API klienckie Guardtime KSI dla C
 Name:		libksi
-Version:	3.20.3025
-Release:	2
+Version:	3.21.3075
+Release:	1
 License:	Apache v2.0
 Group:		Libraries
-#Source0Download: https://github.com/guardtime/libksi/releases
+#Source0Download: https://github.com/guardtime/libksi/tags
 Source0:	https://github.com/guardtime/libksi/archive/v%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	260c5689fe6379376a9486b4ed64850d
+# Source0-md5:	b85e765ce654a0f03fe24c5ab0025a8d
 Patch0:		%{name}-sh.patch
 Patch1:		%{name}-doxygen.patch
 URL:		http://www.guardtime.com/
@@ -22,6 +22,7 @@ BuildRequires:	curl-devel
 %{?with_apidocs:BuildRequires:	doxygen >= 1.8.0}
 BuildRequires:	libtool
 BuildRequires:	openssl-devel >= 0.9.8
+BuildRequires:	rpm-build >= 4.6
 Requires:	ca-certificates
 Requires:	openssl >= 0.9.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -66,6 +67,7 @@ Biblioteka statyczna Guardtime KSI.
 Summary:	API documentation for Guardtime KSI library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki Guardtime KSI
 Group:		Documentation
+BuildArch:	noarch
 
 %description apidocs
 API documentation for Guardtime KSI library.
